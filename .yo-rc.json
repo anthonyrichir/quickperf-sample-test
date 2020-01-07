@@ -1,0 +1,35 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.book"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "microservice",
+    "baseName": "bookApi",
+    "packageName": "com.book",
+    "packageFolder": "com/book",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NWU1MDg2ZTkwNDY5YWNjMTcwYmRiNjVjMzNmNzE5MTgwZDM3ZjI5NTVlNjM4Mjk1YmFkOGI4NjdmNDA0Njg0YzVhYzdiNmYyOTU0MmM1ZTNlMTU2OTgxYjc5NTM4ODU0YWYxNTNkZWMzMDZmODEzZTIxMjFiMjgyNzk0ZTc4ZmM=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
