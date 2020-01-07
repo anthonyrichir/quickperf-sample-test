@@ -1,0 +1,20 @@
+{
+    "name": "Owner",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20191002232215",
+    "entityTableName": "owner",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "bookApi",
+    "applications": "*",
+    "microserviceName": "bookApi"
+}

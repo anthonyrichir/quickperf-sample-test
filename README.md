@@ -1,3 +1,14 @@
+# Sample QuickPerf Demo with Jhipster
+
+This sample application was generated using Jhipster 6.0.1, and a JDL file, in which I tried to integrate QuickPerf.
+
+The 2 main classes to look at are BookResourceIT.java, which aims to test a controller, and BookRepositoryTest, aiming to test a Spring Repository.
+Both of them have methods annotated with `@ExpectSelect`, and both fails because QuickPerf detects 2 times the same query.
+
+I might be wrong but I think QuickPerf is making a mistake. I tried to play around with QuickPerfConfiguration.java, trying to enable and disable `disableSameSelectTypesWithDifferentParams()` and `disableExactlySameSelects()` but I still get the same result.
+
+Am I doing anything wrong ?
+
 # bookApi
 
 This application was generated using JHipster 6.0.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.0.1](https://www.jhipster.tech/documentation-archive/v6.0.1).

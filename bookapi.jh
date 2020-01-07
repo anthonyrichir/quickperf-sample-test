@@ -1,0 +1,45 @@
+entity Book {
+	name String
+}
+
+entity Author {
+	name String
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Editor {
+	name String
+}
+
+entity Owner {
+	name String
+}
+
+
+
+relationship OneToOne {
+	Book{owner} to Owner
+}
+
+relationship ManyToMany {
+	Book{author(name)} to Author{book}
+}
+
+relationship ManyToOne {
+	Book{editor} to Editor
+}
+
+// Set pagination options
+paginate all with pagination
+
+// Use Data Transfert Objects (DTO)
+//dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
+
+

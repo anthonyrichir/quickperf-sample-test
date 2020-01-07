@@ -1,0 +1,21 @@
+{
+    "name": "Editor",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20191002232214",
+    "javadoc": "not an ignored comment",
+    "entityTableName": "editor",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "bookApi",
+    "applications": "*",
+    "microserviceName": "bookApi"
+}
