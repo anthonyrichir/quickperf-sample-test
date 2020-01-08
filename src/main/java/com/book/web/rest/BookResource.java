@@ -14,6 +14,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.util.UriComponentsBuilder;
 import org.springframework.http.ResponseEntity;
@@ -112,9 +113,10 @@ public class BookResource {
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the book, or with status {@code 404 (Not Found)}.
      */
     @GetMapping("/books/{id}")
+    @Transactional(readOnly = true)
     public ResponseEntity<Book> getBook(@PathVariable Long id) {
         log.debug("REST request to get Book : {}", id);
-        Optional<Book> book = bookRepository.findOneWithEagerRelationships(id);
+        Optional<Book> book = bookRepository.findById(id);
         return ResponseUtil.wrapOrNotFound(book);
     }
 
