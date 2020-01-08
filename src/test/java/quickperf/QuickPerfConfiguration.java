@@ -30,8 +30,9 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
             disableLikeWithLeadingWildcard()
 
             , // Can reveal a bad use of Hibernate session
-//            disableExactlySameSelects(),
-            displaySql()
+            disableExactlySameSelects()
+            ,
+            displaySqlOfTestMethodBody()
 
             //, //https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/
             //  disableCrossJoin()

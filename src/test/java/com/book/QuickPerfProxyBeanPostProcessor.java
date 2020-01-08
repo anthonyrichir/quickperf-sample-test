@@ -23,7 +23,7 @@ public class QuickPerfProxyBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) {
-        if (bean instanceof DataSource) {
+        if (bean instanceof DataSource && !(bean.toString().contains("ProxyDataSource"))) {
             final ProxyFactory factory = new ProxyFactory(bean);
             factory.setProxyTargetClass(true);
             factory.addAdvice(new ProxyDataSourceInterceptor((DataSource) bean));
