@@ -1,5 +1,6 @@
 package com.book;
 
+import org.quickperf.spring.sql.QuickPerfProxyBeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
